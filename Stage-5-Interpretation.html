@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Misinformed By Visualization - Home</title>
+      <title>Misinformed By Visualization - Stage 5: Interpretation</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -29,7 +29,7 @@
         Breadcrumbs of parent albums
       -->
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Stage-5-Interpretation.html">Stage 5: Interpretation</a>
       </nav>
     
     
@@ -37,39 +37,25 @@
         Nested albums, if any
       -->
       <div id="albums" class="justified-gallery">
-            <a href="Stage-1-Input.html">
-              <img src="media/small/Stage%201:%20Input/Garbage-In/Dubious%20Data/000027_be33a33ec8ccc1c8_dubious%20data.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>Stage 1: Input</h3>
-                <div class="summary">2 albums, 262 photos</div>
-              </div>
-            </a>
-            <a href="Stage-2-Visualization-Design.html">
-              <img src="media/small/Stage%202:%20Visualization%20Design/Choice%20of%20Axis/Data%20of%20Different%20Magnitudes/000266_da952d4a364d9b70_data%20of%20different%20magnitudes.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>Stage 2: Visualization Design</h3>
-                <div class="summary">3 albums, 459 photos</div>
-              </div>
-            </a>
-            <a href="Stage-3-Plotting.html">
-              <img src="media/small/Stage%203:%20Plotting/Chaotic%20Canvas/Cluttering/000045_c04b3b2b2fd02d67_overusing%20colors-cluttering.png" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>Stage 3: Plotting</h3>
-                <div class="summary">3 albums, 525 photos</div>
-              </div>
-            </a>
-            <a href="Stage-4-Perception.html">
-              <img src="media/small/Stage%204:%20Perception/Visual%20Illusion/3D/000006_e2621ce76397858d_3d.gif" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>Stage 4: Perception</h3>
-                <div class="summary">1 album, 198 photos</div>
-              </div>
-            </a>
-            <a href="Stage-5-Interpretation.html">
+            <a href="Stage-5-Interpretation-False-Linkage.html">
               <img src="media/small/Stage%205:%20Interpretation/False%20Linkage/Correlation%20Not%20Causation/000197_a064ad1c5973af6c_missing%20axis%20title-correlation%20not%20causation-missing%20title.png" alt="">
               <div class="caption" style="display: inline-block">
-                <h3>Stage 5: Interpretation</h3>
-                <div class="summary">3 albums, 78 photos</div>
+                <h3>False Linkage</h3>
+                <div class="summary">3 albums, 28 photos</div>
+              </div>
+            </a>
+            <a href="Stage-5-Interpretation-Hidden-Information.html">
+              <img src="media/small/Stage%205:%20Interpretation/Hidden%20Information/Hidden%20Distribution/000205_bb96c0398ee37813_hidden%20distribution.png" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>Hidden Information</h3>
+                <div class="summary">4 albums, 22 photos</div>
+              </div>
+            </a>
+            <a href="Stage-5-Interpretation-Power-of-Words.html">
+              <img src="media/small/Stage%205:%20Interpretation/Power%20of%20Words/Misleading%20Annotation/000379_97a0f05f9c588b2b_misleading%20annotation.jpg" alt="">
+              <div class="caption" style="display: inline-block">
+                <h3>Power of Words</h3>
+                <div class="summary">4 albums, 28 photos</div>
               </div>
             </a>
       </div>
@@ -144,30 +130,6 @@
       });
     </script>
 
-      <script id="slider-js" data-interval="">
-        $(document).ready(function () {
-          let waitTime = 1000;
-
-          try {
-            waitTime = parseInt($("#slider-js").data("interval"));
-          } catch (e) {
-            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
-          }
-
-          $("#lightSlider").lightSlider({
-            auto: true,
-            loop: true,
-            item: 1,
-            gallery: true,
-            pause: waitTime,
-            onSliderLoad: (el) => {
-              el.lightGallery({
-                selector: "#lightSlider li"
-              })
-            }
-          });
-        });
-      </script>
 
 
   </body>
